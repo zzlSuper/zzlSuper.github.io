@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.2">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"zzlsuper.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="vim的三种模式及文件查看命令">
+<meta property="og:type" content="article">
+<meta property="og:title" content="vim工具及linux文件查看命令、打包压缩与搜索命令">
+<meta property="og:url" content="http://zzlsuper.github.io/2023/05/01/vim%E5%B7%A5%E5%85%B7/index.html">
+<meta property="og:site_name" content="听风与他-博客">
+<meta property="og:description" content="vim的三种模式及文件查看命令">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/a2f9d9ed41a29f096b04d32e4fa9e84.png">
+<meta property="og:image" content="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/23b65774343da9149b8744026374fae.png">
+<meta property="og:image" content="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/dd6de819e3390382916493451370ac9.png">
+<meta property="og:image" content="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/b59902cb4235d9928ce8534bad0d644.png">
+<meta property="og:image" content="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/df051ded641817fd634a410df349526.png">
+<meta property="og:image" content="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/f9dc2b1493d9e9e37b7f5192500bac0.png">
+<meta property="og:image" content="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/aad57aebdf56d907cb924e42a7ef2d5.png">
+<meta property="og:image" content="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/4453bd898fe1edd2ff1fa08b2770b78.png">
+<meta property="og:image" content="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/3de6828a7acd3edafc3d9c13ffef3cd.png">
+<meta property="og:image" content="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/60c33f177f199bd73f9a064c261a19c.png">
+<meta property="og:image" content="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/223113fa3dde2b1cb274b037de55e47.png">
+<meta property="og:image" content="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/cc73c94c035799ef2a764eb85949a15.png">
+<meta property="og:image" content="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/15945b2cb15b08d9d34c7ca5416dc87.png">
+<meta property="og:image" content="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/468aa9acd42b2d24677a1c55538b2b7.png">
+<meta property="article:published_time" content="2023-05-01T08:20:26.000Z">
+<meta property="article:modified_time" content="2023-05-01T09:22:18.035Z">
+<meta property="article:author" content="听风与他">
+<meta property="article:tag" content="linux">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/a2f9d9ed41a29f096b04d32e4fa9e84.png">
+
+<link rel="canonical" href="http://zzlsuper.github.io/2023/05/01/vim%E5%B7%A5%E5%85%B7/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>vim工具及linux文件查看命令、打包压缩与搜索命令 | 听风与他-博客</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">听风与他-博客</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">接受自己的有限性，做该做的事情，并接受它的事与愿违——罗翔</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zzlsuper.github.io/2023/05/01/vim%E5%B7%A5%E5%85%B7/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/%E6%88%91%E7%9A%84%E5%A4%B4%E5%83%8F.jpg">
+      <meta itemprop="name" content="听风与他">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="听风与他-博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          vim工具及linux文件查看命令、打包压缩与搜索命令
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2023-05-01 16:20:26 / 修改时间：17:22:18" itemprop="dateCreated datePublished" datetime="2023-05-01T16:20:26+08:00">2023-05-01</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/linux/" itemprop="url" rel="index"><span itemprop="name">linux</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="vim的三种模式及文件查看命令"><a href="#vim的三种模式及文件查看命令" class="headerlink" title="vim的三种模式及文件查看命令"></a>vim的三种模式及文件查看命令</h1><span id="more"></span>
+
+<h2 id="命令模式-Command-mode"><a href="#命令模式-Command-mode" class="headerlink" title="命令模式(Command mode)"></a>命令模式(Command mode)</h2><h3 id="命令模式下的命令及作用"><a href="#命令模式下的命令及作用" class="headerlink" title="命令模式下的命令及作用"></a>命令模式下的命令及作用</h3><ul>
+<li>按esc即可进入命令模式</li>
+</ul>
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/a2f9d9ed41a29f096b04d32e4fa9e84.png"></p>
+<h2 id="输入模式-Insert-mode"><a href="#输入模式-Insert-mode" class="headerlink" title="输入模式(Insert mode)"></a>输入模式(Insert mode)</h2><p>一般在命令模式下按a进入输入模式</p>
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/23b65774343da9149b8744026374fae.png"></p>
+<h2 id="底线命令模式-Last-line-mode"><a href="#底线命令模式-Last-line-mode" class="headerlink" title="底线命令模式(Last line mode)"></a>底线命令模式(Last line mode)</h2><ul>
+<li>主要保存或者退出文件，以及设置Vim编辑器的工作环境，还可以让用户执行外部的Linux命令或跳转所编写文档的特定行数。</li>
+</ul>
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/dd6de819e3390382916493451370ac9.png"></p>
+<h1 id="linux文件查看命令"><a href="#linux文件查看命令" class="headerlink" title="linux文件查看命令"></a>linux文件查看命令</h1><h2 id="cat命令"><a href="#cat命令" class="headerlink" title="cat命令"></a>cat命令</h2><p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/b59902cb4235d9928ce8534bad0d644.png"></p>
+<ul>
+<li><p>查看根目录下的a.info文件</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat a.<span class="property">info</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/df051ded641817fd634a410df349526.png"></p>
+<h3 id="nl查看内容，显示行号"><a href="#nl查看内容，显示行号" class="headerlink" title="nl查看内容，显示行号"></a>nl查看内容，显示行号</h3><p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/f9dc2b1493d9e9e37b7f5192500bac0.png"></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nl a.<span class="property">info</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/aad57aebdf56d907cb924e42a7ef2d5.png"></p>
+</li>
+</ul>
+<h3 id="head-只看头几行"><a href="#head-只看头几行" class="headerlink" title="head(只看头几行)"></a>head(只看头几行)</h3><p>只看头3行</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">head -n <span class="number">3</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/4453bd898fe1edd2ff1fa08b2770b78.png"></p>
+<h3 id="tail（只看尾几行）"><a href="#tail（只看尾几行）" class="headerlink" title="tail（只看尾几行）"></a>tail（只看尾几行）</h3><p>只看尾3行</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tail -n <span class="number">3</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/3de6828a7acd3edafc3d9c13ffef3cd.png"></p>
+<h1 id="linux-打包压缩与搜索命令"><a href="#linux-打包压缩与搜索命令" class="headerlink" title="linux 打包压缩与搜索命令"></a>linux 打包压缩与搜索命令</h1><p>创建普通的info或txt文件</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">touch a.txt</span><br></pre></td></tr></table></figure>
+
+<h2 id="tar命令"><a href="#tar命令" class="headerlink" title="tar命令"></a>tar命令</h2><p>选项：</p>
+<ul>
+<li><p>-c 产生.tar打包文件</p>
+<p>-v 显示详细信息</p>
+<p>-f 指定压缩后的文件名</p>
+<p>-z 打包同时压缩 Gzip</p>
+<p>-x 解包.tar文件</p>
+</li>
+<li><p>压缩test目录下的a.info、a.txt、b.info，并给安装包取名叫test.tar.gz</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -zcvf test.tar.gz a.info a.txt b.info</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/60c33f177f199bd73f9a064c261a19c.png"></p>
+</li>
+<li><p>解压命令</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -zxvf test.<span class="property">tar</span>.<span class="property">gz</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/223113fa3dde2b1cb274b037de55e47.png"></p>
+</li>
+</ul>
+<p>将test.tar.gz解压到指定的位置，需要-C指定位置</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -zxvf test.<span class="property">tar</span>.<span class="property">gz</span> -C /usr/local/</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/cc73c94c035799ef2a764eb85949a15.png"></p>
+<h2 id="gzip-gunzip压缩"><a href="#gzip-gunzip压缩" class="headerlink" title="gzip/gunzip压缩"></a>gzip/gunzip压缩</h2><ul>
+<li><p>gzip是压缩</p>
+<p>如压缩test下的a.info文件</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gzip a.<span class="property">info</span></span><br></pre></td></tr></table></figure></li>
+<li><p>gunzip是解压</p>
+<p>如解压a.info.zip</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gunzip a.<span class="property">info</span>.<span class="property">gz</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/15945b2cb15b08d9d34c7ca5416dc87.png"></p>
+</li>
+</ul>
+<h2 id="搜索命令"><a href="#搜索命令" class="headerlink" title="搜索命令"></a>搜索命令</h2><ul>
+<li><p>grep</p>
+<p>如在a.info文件里搜索a字符</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep <span class="string">&quot;a&quot;</span> a.<span class="property">info</span></span><br></pre></td></tr></table></figure>
+
+<p>如果想显示行号，加上-n</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep -n <span class="string">&quot;a&quot;</span> a.<span class="property">info</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/468aa9acd42b2d24677a1c55538b2b7.png"></p>
+</li>
+<li><p>find命令</p>
+<p>用于按照指定条件来查找文件</p>
+<p>如搜索当前目录下后缀名为info的文件,*为通配符</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">find ./ -name *.<span class="property">info</span></span><br></pre></td></tr></table></figure>
+
+<p>寻找用户创建出来的文件</p>
+<p>如root创建出来的文件</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">find / -user root</span><br></pre></td></tr></table></figure></li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/linux/" rel="tag"># linux</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2023/05/01/linux%E8%B7%AF%E5%BE%84%E5%8F%8A%E6%96%87%E4%BB%B6%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" rel="prev" title="linux路径及常用命令">
+      <i class="fa fa-chevron-left"></i> linux路径及常用命令
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2023/05/01/linux%E5%B8%B8%E7%94%A8%E7%B3%BB%E7%BB%9F%E5%B7%A5%E4%BD%9C%E5%91%BD%E4%BB%A4/" rel="next" title="linux常用系统工作命令">
+      linux常用系统工作命令 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#vim%E7%9A%84%E4%B8%89%E7%A7%8D%E6%A8%A1%E5%BC%8F%E5%8F%8A%E6%96%87%E4%BB%B6%E6%9F%A5%E7%9C%8B%E5%91%BD%E4%BB%A4"><span class="nav-number">1.</span> <span class="nav-text">vim的三种模式及文件查看命令</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%91%BD%E4%BB%A4%E6%A8%A1%E5%BC%8F-Command-mode"><span class="nav-number">1.1.</span> <span class="nav-text">命令模式(Command mode)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%91%BD%E4%BB%A4%E6%A8%A1%E5%BC%8F%E4%B8%8B%E7%9A%84%E5%91%BD%E4%BB%A4%E5%8F%8A%E4%BD%9C%E7%94%A8"><span class="nav-number">1.1.1.</span> <span class="nav-text">命令模式下的命令及作用</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E6%A8%A1%E5%BC%8F-Insert-mode"><span class="nav-number">1.2.</span> <span class="nav-text">输入模式(Insert mode)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BA%95%E7%BA%BF%E5%91%BD%E4%BB%A4%E6%A8%A1%E5%BC%8F-Last-line-mode"><span class="nav-number">1.3.</span> <span class="nav-text">底线命令模式(Last line mode)</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#linux%E6%96%87%E4%BB%B6%E6%9F%A5%E7%9C%8B%E5%91%BD%E4%BB%A4"><span class="nav-number">2.</span> <span class="nav-text">linux文件查看命令</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#cat%E5%91%BD%E4%BB%A4"><span class="nav-number">2.1.</span> <span class="nav-text">cat命令</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#nl%E6%9F%A5%E7%9C%8B%E5%86%85%E5%AE%B9%EF%BC%8C%E6%98%BE%E7%A4%BA%E8%A1%8C%E5%8F%B7"><span class="nav-number">2.1.1.</span> <span class="nav-text">nl查看内容，显示行号</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#head-%E5%8F%AA%E7%9C%8B%E5%A4%B4%E5%87%A0%E8%A1%8C"><span class="nav-number">2.1.2.</span> <span class="nav-text">head(只看头几行)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#tail%EF%BC%88%E5%8F%AA%E7%9C%8B%E5%B0%BE%E5%87%A0%E8%A1%8C%EF%BC%89"><span class="nav-number">2.1.3.</span> <span class="nav-text">tail（只看尾几行）</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#linux-%E6%89%93%E5%8C%85%E5%8E%8B%E7%BC%A9%E4%B8%8E%E6%90%9C%E7%B4%A2%E5%91%BD%E4%BB%A4"><span class="nav-number">3.</span> <span class="nav-text">linux 打包压缩与搜索命令</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#tar%E5%91%BD%E4%BB%A4"><span class="nav-number">3.1.</span> <span class="nav-text">tar命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#gzip-gunzip%E5%8E%8B%E7%BC%A9"><span class="nav-number">3.2.</span> <span class="nav-text">gzip&#x2F;gunzip压缩</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%90%9C%E7%B4%A2%E5%91%BD%E4%BB%A4"><span class="nav-number">3.3.</span> <span class="nav-text">搜索命令</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="听风与他"
+      src="/images/%E6%88%91%E7%9A%84%E5%A4%B4%E5%83%8F.jpg">
+  <p class="site-author-name" itemprop="name">听风与他</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">13</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/zzlSuper" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;zzlSuper" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/%E8%BD%AF%E5%B7%A52105%E7%8F%AD" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;软工2105班" rel="noopener" target="_blank"><i class="fab fa-weibo fa-fw"></i>Weibo</a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://github.com/zzlSuper?tab=repositories/" title="https:&#x2F;&#x2F;github.com&#x2F;zzlSuper?tab&#x3D;repositories&#x2F;" rel="noopener" target="_blank">zzlSuper</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://www.bilibili.com/video/BV16W411t7mq?p=6&vd_source=1b839dbdeebe6e6d389101195e65fc95" title="https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV16W411t7mq?p&#x3D;6&amp;vd_source&#x3D;1b839dbdeebe6e6d389101195e65fc95" rel="noopener" target="_blank">hexo学习视频</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">听风与他</span>
+</div>
+
+<!--
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>-->
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  <style>
+    .copy-btn {
+      display: inline-block;
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 20px;
+      color: #333;
+      white-space: nowrap;
+      vertical-align: middle;
+      cursor: pointer;
+      background-color: #eee;
+      background-image: linear-gradient(#fcfcfc, #eee);
+      border: 1px solid #d5d5d5;
+      border-radius: 3px;
+      user-select: none;
+      outline: 0;
+    }
+
+    .highlight-wrap .copy-btn {
+      transition: opacity .3s ease-in-out;
+      opacity: 0;
+      padding: 2px 6px;
+      position: absolute;
+      right: 4px;
+      top: 8px;
+    }
+
+    .highlight-wrap:hover .copy-btn,
+    .highlight-wrap .copy-btn:focus {
+      opacity: 1
+    }
+
+    .highlight-wrap {
+      position: relative;
+    }
+  </style>
+  
+  <script>
+    $('.highlight').each(function (i, e) {
+      var $wrap = $('<div>').addClass('highlight-wrap')
+      $(e).after($wrap)
+      $wrap.append($('<button>').addClass('copy-btn').append('复制').on('click', function (e) {
+        var code = $(this).parent().find('.code').find('.line').map(function (i, e) {
+          return $(e).text()
+        }).toArray().join('/n')
+        var ta = document.createElement('textarea')
+        document.body.appendChild(ta)
+        ta.style.position = 'absolute'
+        ta.style.top = '0px'
+        ta.style.left = '0px'
+        ta.value = code
+        ta.select()
+        ta.focus()
+        var result = document.execCommand('copy')
+        document.body.removeChild(ta)
+        
+          if(result)$(this).text('复制成功')
+          else $(this).text('复制失败')
+        
+        $(this).blur()
+      })).on('mouseleave', function (e) {
+        var $b = $(this).find('.copy-btn')
+        setTimeout(function () {
+          $b.text('复制')
+        }, 300)
+      }).append(e)
+    })
+  </script>
+
+</body>
+</html>

@@ -1,32 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello ZZL</title>
-    <url>/2023/04/24/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<span id="more"></span>
-
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>my_English</title>
     <url>/2023/04/29/my-English/</url>
     <content><![CDATA[<h2 id="我的英语"><a href="#我的英语" class="headerlink" title="我的英语"></a>我的英语</h2><span id="more"></span>
 
 <ul>
-<li>2023/04/29  百词斩25词</li>
+<li>2023/04/29  百词斩25词√</li>
+<li>2023/04/30  百词斩25词√</li>
+<li>2023/05/01  百词斩25词√</li>
+<li>2023/05/02  百词斩25词√   大英赛试卷一张</li>
 </ul>
 ]]></content>
       <categories>
@@ -42,7 +25,10 @@
     <content><![CDATA[<h2 id="我的运动"><a href="#我的运动" class="headerlink" title="我的运动"></a>我的运动</h2><span id="more"></span>
 
 <ul>
-<li>2023/04/29  10圈</li>
+<li>2023/04/29  10圈√</li>
+<li>2023/04/30    0圈×</li>
+<li>2023/05/01    15圈√</li>
+<li>2023/05/02    10圈√</li>
 </ul>
 ]]></content>
       <categories>
@@ -54,34 +40,734 @@
       </tags>
   </entry>
   <entry>
-    <title>zzl</title>
-    <url>/2023/04/29/zzl/</url>
-    <content><![CDATA[<h1 id="zzl"><a href="#zzl" class="headerlink" title="zzl"></a>zzl</h1><h2 id="第一遍文章"><a href="#第一遍文章" class="headerlink" title="第一遍文章"></a>第一遍文章</h2><h3 id="这个是三级标题"><a href="#这个是三级标题" class="headerlink" title="这个是三级标题"></a>这个是三级标题</h3><span id="more"></span>
+    <title>hexo的使用</title>
+    <url>/2023/04/29/hexo%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<h1 id="hexo命令"><a href="#hexo命令" class="headerlink" title="hexo命令"></a>hexo命令</h1><span id="more"></span>
 
-<p>设置截断</p>
-<ul>
-<li><p>列表1</p>
-</li>
-<li><p>列表2</p>
-<p>a 子列表</p>
-<p>b 子列表2</p>
-<p>列表3</p>
-<hr>
-<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/%E6%88%91%E7%9A%84%E5%A4%B4%E5%83%8F.jpg"></p>
-<p><em>字体是斜的</em></p>
-<p><strong>字体是加粗的</strong></p>
-<p><code>&lt;javascript&gt;</code></p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">package 操作系统;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.<span class="property">util</span>.<span class="property">ArrayDeque</span>;</span><br><span class="line"><span class="keyword">import</span> java.<span class="property">util</span>.<span class="property">Deque</span>;</span><br><span class="line"><span class="keyword">import</span> java.<span class="property">util</span>.<span class="property">Scanner</span>;</span><br><span class="line"></span><br><span class="line">public <span class="keyword">class</span> <span class="title class_">queye</span> &#123;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">12</span></span><br><span class="line"><span class="comment">4 3 2 1 4 3 5 4 3 2 1 5</span></span><br><span class="line"><span class="comment">3</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line">	public <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span>(<span class="params"><span class="built_in">String</span>[] args</span>) &#123;</span><br><span class="line">		<span class="comment">// TODO Auto-generated method stub</span></span><br><span class="line">        <span class="title class_">Scanner</span> sc=<span class="keyword">new</span> <span class="title class_">Scanner</span>(<span class="title class_">System</span>.<span class="property">in</span>);</span><br><span class="line">        int n=sc.<span class="title function_">nextInt</span>();</span><br><span class="line">        int a[]=<span class="keyword">new</span> int[n+<span class="number">1</span>];</span><br><span class="line">        <span class="keyword">for</span>(int i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">        &#123;</span><br><span class="line">        	a[i]=sc.<span class="title function_">nextInt</span>();</span><br><span class="line">        &#125;</span><br><span class="line">        int k=sc.<span class="title function_">nextInt</span>();</span><br><span class="line">        int count=<span class="number">0</span>;</span><br><span class="line">        <span class="title class_">Deque</span>&lt;<span class="title class_">Integer</span>&gt; q=<span class="keyword">new</span> <span class="title class_">ArrayDeque</span>&lt;&gt;();</span><br><span class="line">        <span class="keyword">for</span>(int i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">        &#123;</span><br><span class="line">        	<span class="keyword">if</span>(q.<span class="title function_">size</span>()&gt;=k&amp;&amp;!q.<span class="title function_">contains</span>(a[i]))</span><br><span class="line">        	&#123;</span><br><span class="line">        		q.<span class="title function_">pollFirst</span>();</span><br><span class="line">        		q.<span class="title function_">addLast</span>(a[i]);</span><br><span class="line">        		count++;</span><br><span class="line">        	&#125;<span class="keyword">else</span> &#123;</span><br><span class="line">        		<span class="keyword">if</span>(q.<span class="title function_">size</span>()&lt;k&amp;&amp;!q.<span class="title function_">contains</span>(a[i]))</span><br><span class="line">        		&#123;</span><br><span class="line">        	    q.<span class="title function_">add</span>(a[i]);</span><br><span class="line">        		count++;</span><br><span class="line">        		&#125;</span><br><span class="line"></span><br><span class="line">        	&#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="title class_">System</span>.<span class="property">out</span>.<span class="title function_">print</span>(count);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="创建标签命令"><a href="#创建标签命令" class="headerlink" title="创建标签命令"></a>创建标签命令</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">hexo n page tags</span><br></pre></td></tr></table></figure>
 
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> 操作系统;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.ArrayDeque;</span><br><span class="line"><span class="keyword">import</span> java.util.Deque;</span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">queye</span> &#123;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">12</span></span><br><span class="line"><span class="comment">4 3 2 1 4 3 5 4 3 2 1 5</span></span><br><span class="line"><span class="comment">3</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">		<span class="comment">// TODO Auto-generated method stub</span></span><br><span class="line">        Scanner sc=<span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        <span class="type">int</span> n=sc.nextInt();</span><br><span class="line">        <span class="type">int</span> a[]=<span class="keyword">new</span> <span class="title class_">int</span>[n+<span class="number">1</span>];</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">        &#123;</span><br><span class="line">        	a[i]=sc.nextInt();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="type">int</span> k=sc.nextInt();</span><br><span class="line">        <span class="type">int</span> count=<span class="number">0</span>;</span><br><span class="line">        Deque&lt;Integer&gt; q=<span class="keyword">new</span> <span class="title class_">ArrayDeque</span>&lt;&gt;();</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">        &#123;</span><br><span class="line">        	<span class="keyword">if</span>(q.size()&gt;=k&amp;&amp;!q.contains(a[i]))</span><br><span class="line">        	&#123;</span><br><span class="line">        		q.pollFirst();</span><br><span class="line">        		q.addLast(a[i]);</span><br><span class="line">        		count++;</span><br><span class="line">        	&#125;<span class="keyword">else</span> &#123;</span><br><span class="line">        		<span class="keyword">if</span>(q.size()&lt;k&amp;&amp;!q.contains(a[i]))</span><br><span class="line">        		&#123;</span><br><span class="line">        	    q.add(a[i]);</span><br><span class="line">        		count++;</span><br><span class="line">        		&#125;</span><br><span class="line"></span><br><span class="line">        	&#125;</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.print(count);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ul>
+<h2 id="创建分类命令"><a href="#创建分类命令" class="headerlink" title="创建分类命令"></a>创建分类命令</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">hexo n page categories</span><br></pre></td></tr></table></figure>
+
+<h2 id="新建名为linux的文章"><a href="#新建名为linux的文章" class="headerlink" title="新建名为linux的文章"></a>新建名为linux的文章</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">hexo n linux</span><br></pre></td></tr></table></figure>
+
+<h2 id="启动本地linux"><a href="#启动本地linux" class="headerlink" title="启动本地linux"></a>启动本地linux</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<h2 id="清除缓存"><a href="#清除缓存" class="headerlink" title="清除缓存"></a>清除缓存</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">hexo c</span><br></pre></td></tr></table></figure>
+
+<h2 id="更新hexo"><a href="#更新hexo" class="headerlink" title="更新hexo"></a>更新hexo</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
+
+<p>上传到远程仓库</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
 ]]></content>
       <categories>
-        <category>前端</category>
+        <category>hexo</category>
       </categories>
       <tags>
         <tag>分享</tag>
         <tag>导航</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux用户及用户组管理</title>
+    <url>/2023/04/30/Linux%E7%94%A8%E6%88%B7%E5%8F%8A%E7%94%A8%E6%88%B7%E7%BB%84%E7%AE%A1%E7%90%86/</url>
+    <content><![CDATA[<h1 id="linux用户及用户组管理"><a href="#linux用户及用户组管理" class="headerlink" title="linux用户及用户组管理"></a><strong>linux用户及用户组管理</strong></h1><span id="more"></span>
+
+<h2 id="linux用户管理"><a href="#linux用户管理" class="headerlink" title="linux用户管理"></a>linux用户管理</h2><p>进入家(home)目录：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">cd /home</span><br></pre></td></tr></table></figure>
+
+<p>查看home目录下的用户:</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">ll</span><br></pre></td></tr></table></figure>
+
+<p>查看用户信息：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">id username</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="添加用户：useradd"><a href="#添加用户：useradd" class="headerlink" title="添加用户：useradd"></a>添加用户：useradd</h2><p>添加uid为8888的用户it</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">useradd -u <span class="number">8888</span> it</span><br></pre></td></tr></table></figure>
+
+<h2 id="更改用户：usermod"><a href="#更改用户：usermod" class="headerlink" title="更改用户：usermod"></a>更改用户：usermod</h2><p>更改用户it的uid为1001</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">usermod -u <span class="number">1001</span> it</span><br></pre></td></tr></table></figure>
+
+<h2 id="passwd-用户账号口令管理"><a href="#passwd-用户账号口令管理" class="headerlink" title="passwd:用户账号口令管理"></a>passwd:用户账号口令管理</h2><p>修改用户it的密码：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">passwd it</span><br></pre></td></tr></table></figure>
+
+<p>之后输入两遍新密码即可修改密码</p>
+<p>锁住用户it的密码：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">passwd -l it</span><br></pre></td></tr></table></figure>
+
+<p>解开用户it的密码：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">passwd -u it</span><br></pre></td></tr></table></figure>
+
+<h2 id="删除用户-userdel"><a href="#删除用户-userdel" class="headerlink" title="删除用户:userdel"></a>删除用户:userdel</h2><p>user -f 用户名      -强制删除用户</p>
+<p>user -r 用户名      -同时删除用户及用户组</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">userdel -rf it</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="linux用户组管理"><a href="#linux用户组管理" class="headerlink" title="linux用户组管理"></a>linux用户组管理</h2><h2 id="查看用户组及用户"><a href="#查看用户组及用户" class="headerlink" title="查看用户组及用户"></a>查看用户组及用户</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">cat /etc/group</span><br></pre></td></tr></table></figure>
+
+<h2 id="添加用户组：groupadd"><a href="#添加用户组：groupadd" class="headerlink" title="添加用户组：groupadd"></a>添加用户组：groupadd</h2><p>-g:指定新建工作组的id</p>
+<p>添加一个工作组web</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">groupadd -g <span class="number">344</span> web</span><br></pre></td></tr></table></figure>
+
+<h2 id="修改用户组：groupmod"><a href="#修改用户组：groupmod" class="headerlink" title="修改用户组：groupmod"></a>修改用户组：groupmod</h2><p>-n:设置预使用的群组名称</p>
+<p>将用户组web改成web2,群组id改为355</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">groupmod -g <span class="number">355</span> -n web2 web</span><br></pre></td></tr></table></figure>
+
+<h2 id="删除用户组-groupdel"><a href="#删除用户组-groupdel" class="headerlink" title="删除用户组:groupdel"></a>删除用户组:groupdel</h2><p>删除用户组web2</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">groupdel web2</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+
+
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linx</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>linux用户及切换</title>
+    <url>/2023/04/30/linux%E7%94%A8%E6%88%B7%E5%8F%8A%E5%88%87%E6%8D%A2/</url>
+    <content><![CDATA[<h1 id="linux超级用户与伪用户"><a href="#linux超级用户与伪用户" class="headerlink" title="linux超级用户与伪用户"></a>linux超级用户与伪用户</h1><span id="more"></span>
+
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/4e54323bb3203db1735bdf4b66ec3e8.png"></p>
+<h2 id="切换用户"><a href="#切换用户" class="headerlink" title="切换用户"></a>切换用户</h2><ul>
+<li>su username</li>
+</ul>
+<p>切换为root用户</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">su root</span><br></pre></td></tr></table></figure>
+
+<p>普通用户切换为root用户要输入密码，root用户切换为普通用户不用输入密码</p>
+<p>按a出现insert后可编辑文件</p>
+<h2 id="编辑a-info文件"><a href="#编辑a-info文件" class="headerlink" title="编辑a.info文件"></a>编辑a.info文件</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">vim a.info</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/e5177354eb2fa0d7f04334bcc9f5f8a.png"></p>
+<p>编辑完之后按左上角的esc，后按冒号，最后输入wq保存,回车即编辑完毕</p>
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/befa3ef1f18e65322f8093ca516f37a.png"></p>
+<p>查看a.info里面的信息</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">cat a.<span class="property">info</span></span><br></pre></td></tr></table></figure>
+
+<p>切换普通用户it后</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">su it</span><br><span class="line">vim a.<span class="property">info</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/c9bdc3bb584c1dd109cc89f44409858.png"></p>
+<ul>
+<li>显示不能更改该文件</li>
+</ul>
+<p>删除a.info</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">rm -rf a.<span class="property">info</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/15653450aa8964e8dd864f299460128.png"></p>
+<ul>
+<li>报错，it用户没有权限</li>
+</ul>
+<h2 id="sudo"><a href="#sudo" class="headerlink" title="sudo"></a>sudo</h2><p>提升普通用户的权限，成为超级管理员</p>
+<p>在root用户下输入</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">visudo</span><br></pre></td></tr></table></figure>
+
+<p>按a编辑，写入超级权限给it</p>
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/9141cd7d3256d7b63f2ee80a7cbc464.png"></p>
+<h2 id="linux-vim保存退出命令：先按ESC进入Command模式，然后输入”-wq”-回车就可以保存并退出了"><a href="#linux-vim保存退出命令：先按ESC进入Command模式，然后输入”-wq”-回车就可以保存并退出了" class="headerlink" title="linux vim保存退出命令：先按ESC进入Command模式，然后输入”:wq”,回车就可以保存并退出了"></a>linux vim保存退出命令：先按ESC进入Command模式，然后输入”:wq”,回车就可以保存并退出了</h2><ul>
+<li><p>编辑完权限后，su it切换为用户it,输入密码：如147258</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">sudo rm -rf a.<span class="property">info</span></span><br></pre></td></tr></table></figure>
+
+<p>即成功删除了a.info文件</p>
+</li>
+</ul>
+<h2 id="更改配置文件"><a href="#更改配置文件" class="headerlink" title="更改配置文件"></a>更改配置文件</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">visudo</span><br><span class="line">it <span class="variable constant_">ALL</span>=<span class="attr">NOPASSWD</span>: <span class="variable constant_">ALL</span></span><br></pre></td></tr></table></figure>
+
+<p>即可完成it用户不需要密码也可删除a.info文件</p>
+<h2 id="在linux系统中，root管理员UID是0"><a href="#在linux系统中，root管理员UID是0" class="headerlink" title="在linux系统中，root管理员UID是0"></a>在linux系统中，root管理员UID是0</h2><h2 id="sudo命令不能用来替换su命令"><a href="#sudo命令不能用来替换su命令" class="headerlink" title="sudo命令不能用来替换su命令"></a>sudo命令不能用来替换su命令</h2>]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>linux路径及常用命令</title>
+    <url>/2023/05/01/linux%E8%B7%AF%E5%BE%84%E5%8F%8A%E6%96%87%E4%BB%B6%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<h1 id="linux路径及文件常用命令"><a href="#linux路径及文件常用命令" class="headerlink" title="linux路径及文件常用命令"></a>linux路径及文件常用命令</h1><span id="more"></span>
+
+<h1 id="linux路径"><a href="#linux路径" class="headerlink" title="linux路径"></a>linux路径</h1><ul>
+<li><p>返回上一级目录的命令</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">cd ..</span><br></pre></td></tr></table></figure>
+
+<p>上一个目录是哪，我就去哪</p>
+</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">cd -</span><br></pre></td></tr></table></figure>
+
+<h2 id="绝对路径"><a href="#绝对路径" class="headerlink" title="绝对路径"></a>绝对路径</h2><p>绝对路径是指从“根”开始的路径。例如：/usr/local,/etc/hosts  如果一个路径是从/开始，它一定是绝对路径</p>
+<ul>
+<li><p>“/“表示根目录</p>
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/e15b0d4b24f27d7637be48268046f3b.png"></p>
+</li>
+</ul>
+<h2 id="相对路径"><a href="#相对路径" class="headerlink" title="相对路径"></a>相对路径</h2><p>相对路径是以“.”或者“..”开头的，.表示用户所处的位置，..表示上级目录</p>
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/04f9fe853986f0cfcdbff956fda2d2f.png"></p>
+<p>pwd显示当前所处位置</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">pwd</span><br></pre></td></tr></table></figure>
+
+<h2 id="linux目录文件操作常用命令"><a href="#linux目录文件操作常用命令" class="headerlink" title="linux目录文件操作常用命令"></a>linux目录文件操作常用命令</h2><ul>
+<li><p>mkdir(创建新文件夹)</p>
+<p>在opt目录下创建一个名叫beijing的文件夹</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mkdir beijing</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/23688039c52559398082f6a4be0a324.png"></p>
+</li>
+</ul>
+<p>-p:帮助你直接将所需要的目录（包含上一级目录）递归创建起来</p>
+<ul>
+<li>在a,b,c目录下创建d目录</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">mkdir -p a/b/c/d</span><br></pre></td></tr></table></figure>
+
+<p>返回上一级</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">cd ../</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>删除空目录beijing</p>
+</li>
+<li><p>-p从空目录开始，一次删除多级空目录</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">rmdir -p beijing</span><br></pre></td></tr></table></figure>
+
+<p>递归删除空目录beijing</p>
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/f218d6611e84b984466f2de2aa63549.png"></p>
+</li>
+<li><p>复制文件或目录cp</p>
+<p><em>将a.info复制到d文件夹下</em></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">cp a.<span class="property">info</span> a/b/c/d</span><br></pre></td></tr></table></figure>
+
+<p>进入d文件夹查看a.info文件信息</p>
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/ad53b38be63c28f0c0a31e78f209706.png"></p>
+</li>
+<li><p><strong>-r</strong>：递归持续复制，用与目录的复制行为</p>
+</li>
+<li><p>rm（删除文件或者目录）</p>
+<p>-f ：就是 force 的意思，忽略不存在的文件，不会出现警告信息；</p>
+<p>-r ：递归删除啊！最常用在目录的删除了！这是非常危险的选项！！！</p>
+<p><em>删除opt文件夹下的a目录</em></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">rm -rf a</span><br></pre></td></tr></table></figure></li>
+</ul>
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/a70f3311bba84f900dd44494be3775d.png"></p>
+<p>将a.info复制一份命名为d.info</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">cp a.<span class="property">info</span> d.<span class="property">info</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/9ca5701e321b82e80b48bdc9f481b05.png"></p>
+<ul>
+<li><p>删除复制的d.info</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">rm -f d.<span class="property">info</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/73e1fdf5343f116fe42205949735340.png"></p>
+</li>
+<li><p>mv(移动文件与目录，或修改名称，类似于剪切)</p>
+</li>
+</ul>
+<p><em>将opt下的a.info移动到test文件夹下</em></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">mv a.<span class="property">info</span> test/</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/918e30b8bf847224a514f388ef8f248.png"></p>
+<ul>
+<li><p>mv也可实现重命名的操作</p>
+<p>将test下的a.info重命名为b.info</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">mv a.<span class="property">info</span> b.<span class="property">info</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/2517759134de9bb694d3061db3cb669.png"></p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>linux文件</title>
+    <url>/2023/05/01/linux%E6%96%87%E4%BB%B6/</url>
+    <content><![CDATA[<h1 id="linux文件操作"><a href="#linux文件操作" class="headerlink" title="linux文件操作"></a>linux文件操作</h1><span id="more"></span>
+
+<h2 id="ls命令"><a href="#ls命令" class="headerlink" title="ls命令"></a>ls命令</h2><ul>
+<li><p>显示目前工作目录下的所含文件及子目录</p>
+<p>-a 显示所有文件及目录</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">ls -a</span><br></pre></td></tr></table></figure>
+
+<p>-l 除文件名称外，文件类型，拥有者，大小也会列出</p>
+</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">ls -l</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>ll是ls -l的简写</p>
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/_M7565102SXWI09CA2@VOKJ.png"></p>
+</li>
+<li><p>进入root目录</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">cd /</span><br></pre></td></tr></table></figure></li>
+<li><p>ll查看root下的文件</p>
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/IHEDRD84XP%7BJCX0$7%60$~%60RD.png"></p>
+</li>
+</ul>
+<h2 id="创建a-info文件并添加内容"><a href="#创建a-info文件并添加内容" class="headerlink" title="创建a.info文件并添加内容"></a>创建a.info文件并添加内容</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">vim a.<span class="property">info</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>切换到root目录下的opt目录</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">cd /opt</span><br></pre></td></tr></table></figure>
+
+<h2 id="文件权限"><a href="#文件权限" class="headerlink" title="文件权限"></a>文件权限</h2><ul>
+<li>所谓的文件权限，是指对文件访问权限，包括对文件的读、写、删、除、执行操作</li>
+</ul>
+<p><em>linux系统中,文件有三种访问方式</em></p>
+<ul>
+<li><p>读（r）  -允许读取文件</p>
+</li>
+<li><p>写（w)   -允许写、修改和删除某个文件</p>
+</li>
+<li><p>执行（x) -允许执行某个文件</p>
+<p>不保存强制退出</p>
+<p>先按esc进入编辑模式</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">:q!</span><br></pre></td></tr></table></figure>
+
+<p>即可退出</p>
+<p>用户it创建c.info文件(需输入密码：147258)</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">sudo vim c.<span class="property">info</span></span><br></pre></td></tr></table></figure>
+
+<p>查看目录下的文件所属组及属性</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">ls -al</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/bdc64c5fb732abe0caa89f4975e4211.png"></p>
+<p>进入用户it的家目录</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">cd ~</span><br></pre></td></tr></table></figure>
+
+<h2 id="linux权限字与权限操作"><a href="#linux权限字与权限操作" class="headerlink" title="linux权限字与权限操作"></a>linux权限字与权限操作</h2><ul>
+<li><p>chgrp: 改变文件所属群组    (这个命令即change group的缩写)</p>
+</li>
+<li><p>chown: 改变文件所有人</p>
+</li>
+<li><p>chmod: 改变文件的属性</p>
+</li>
+</ul>
+<p>在root用户下创建java组</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">groupadd java</span><br></pre></td></tr></table></figure>
+
+
+
+<p>改变a.info的所属组</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">chgrp -R java a.info</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/a9de1783d7b3239b191717b9fa36149.png"></p>
+</li>
+</ul>
+<p>r– 为只读的权限</p>
+<h2 id="改变文件属性chmod"><a href="#改变文件属性chmod" class="headerlink" title="改变文件属性chmod"></a>改变文件属性chmod</h2><ul>
+<li><p>linux文件属性用符号.</p>
+</li>
+<li><p>Linux 文件的基本权限就有九个，分别是 owner/group/others(<strong>拥有者、组、其他</strong>)(三种身份各有自己的 <strong>read/write/execute</strong> )权限。</p>
+</li>
+<li><p>user:用户</p>
+</li>
+<li><p>group：组</p>
+</li>
+<li><p>others:其他</p>
+<p>** 我们使用u,g,o代表三种身份的权限。此外，a代表all，即全部的身份。读写的权限可以写成r,w,x.如下图**</p>
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/4052e4608fd59fca4377eb5db953554.png"></p>
+</li>
+<li><p>给a.info文件增加写的权限</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">chmod g+w a.<span class="property">info</span></span><br></pre></td></tr></table></figure></li>
+<li><p>给a.info文件取消写的权限</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">chmod g-w a.<span class="property">info</span></span><br></pre></td></tr></table></figure></li>
+<li><p>取消用户写的权限</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">chmod u-w a.<span class="property">info</span></span><br></pre></td></tr></table></figure></li>
+<li><p>增加用户写的权限</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">chmod u+w a.<span class="property">info</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/c9f3ba9b1b53faac11a9eb0591d4152.png"></p>
+</li>
+</ul>
+<p>将用户it2添加到用户组java里</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">usermod -g java it2</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/0cf6119baf7110d09724c9f69913ed5.png"></p>
+<h2 id="chmod-u-w-o-x-text命令的意思是"><a href="#chmod-u-w-o-x-text命令的意思是" class="headerlink" title="chmod u+w,o-x text命令的意思是"></a>chmod u+w,o-x text命令的意思是</h2><ul>
+<li>文件属主u增加写权限</li>
+<li>其他用户o删除执行权限</li>
+</ul>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Docker</title>
+    <url>/2023/05/02/Docker/</url>
+    <content><![CDATA[<h1 id="Docker"><a href="#Docker" class="headerlink" title="Docker"></a>Docker</h1><span id="more"></span>
+
+<h2 id="Docker简介"><a href="#Docker简介" class="headerlink" title="Docker简介"></a>Docker简介</h2><ul>
+<li>Docker是一个开源的应用容器引擎</li>
+<li>Docker其实就是可以打包程序和运行环境，把环境和程序一起发布的容器。</li>
+</ul>
+<h2 id="Docker容器虚拟化好处"><a href="#Docker容器虚拟化好处" class="headerlink" title="Docker容器虚拟化好处"></a>Docker容器虚拟化好处</h2><p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/0372126147764e70b191cc8e5b563ee.png"></p>
+<h2 id="Docker在开发和运维中的优势"><a href="#Docker在开发和运维中的优势" class="headerlink" title="Docker在开发和运维中的优势"></a>Docker在开发和运维中的优势</h2><p>对开发和运维( DevOps)人员来说，可能最梦寐以求的就是一次性地创建或配置，可以在任意环境、任意时间让应用正常地运行。Docker恰恰可以实现这一目标。</p>
+<ul>
+<li>更快速的交付和部署</li>
+<li>更高效的资源利用</li>
+<li>更轻松的迁移和扩展</li>
+<li>更简单的更新管理</li>
+</ul>
+<h2 id="Docker与虚拟机比较"><a href="#Docker与虚拟机比较" class="headerlink" title="Docker与虚拟机比较"></a>Docker与虚拟机比较</h2><p><img src="C:\Users\zhangzilong\AppData\Roaming\Typora\typora-user-images\image-20230502205718831.png" alt="image-20230502205718831"></p>
+<h2 id="虚拟化与Docker"><a href="#虚拟化与Docker" class="headerlink" title="虚拟化与Docker"></a>虚拟化与Docker</h2><p>在计算机领域，一般指的是计算虚拟化或通常说的服务虚拟化。</p>
+<h3 id="虚拟化分类"><a href="#虚拟化分类" class="headerlink" title="虚拟化分类"></a>虚拟化分类</h3><ul>
+<li>完全虚拟化</li>
+<li>硬件辅助虚拟化</li>
+<li>部分虚拟化</li>
+<li>超虚拟机化</li>
+<li>操作系统虚拟化</li>
+</ul>
+<h3 id="Docker容器技术属于操作系统虚拟化"><a href="#Docker容器技术属于操作系统虚拟化" class="headerlink" title="Docker容器技术属于操作系统虚拟化"></a>Docker容器技术属于操作系统虚拟化</h3>]]></content>
+      <categories>
+        <category>Docker</category>
+      </categories>
+      <tags>
+        <tag>Docker</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>linux安装软件</title>
+    <url>/2023/05/02/linux%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6/</url>
+    <content><![CDATA[<h1 id="linux安装软件"><a href="#linux安装软件" class="headerlink" title="linux安装软件"></a>linux安装软件</h1><span id="more"></span>
+
+<h2 id="s"><a href="#s" class="headerlink" title="s"></a>s</h2>]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>linux常用系统工作命令</title>
+    <url>/2023/05/01/linux%E5%B8%B8%E7%94%A8%E7%B3%BB%E7%BB%9F%E5%B7%A5%E4%BD%9C%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<h1 id="linux常用系统工作命令"><a href="#linux常用系统工作命令" class="headerlink" title="linux常用系统工作命令"></a>linux常用系统工作命令</h1><span id="more"></span>
+
+<h2 id="reboot命令"><a href="#reboot命令" class="headerlink" title="reboot命令"></a>reboot命令</h2><p>reboot 命令用于重启系统，其格式为 reboot。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">reboot</span><br></pre></td></tr></table></figure>
+
+<h2 id="poweroff命令"><a href="#poweroff命令" class="headerlink" title="poweroff命令"></a>poweroff命令</h2><p>poweroff 命令用于关闭系统，其格式为 poweroff。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">poweroff</span><br></pre></td></tr></table></figure>
+
+<h2 id="wget命令"><a href="#wget命令" class="headerlink" title="wget命令"></a>wget命令</h2><p>wget 命令用于在终端中下载网络文件。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">wget <span class="attr">https</span>:<span class="comment">//dlcdn.apache.org/tomcat/tomcat-8/v8.5.88/bin/embed/apache-tomcat-8.5.88-embed.tar.gz</span></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>linux挂载硬盘及系统状态检测</title>
+    <url>/2023/05/02/linux%E6%8C%82%E8%BD%BD%E7%A1%AC%E7%9B%98/</url>
+    <content><![CDATA[<h1 id="linux挂载硬盘"><a href="#linux挂载硬盘" class="headerlink" title="linux挂载硬盘"></a>linux挂载硬盘</h1><span id="more"></span>
+
+<h2 id="虚拟机添加硬盘"><a href="#虚拟机添加硬盘" class="headerlink" title="虚拟机添加硬盘"></a>虚拟机添加硬盘</h2><p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/6523106d3012f165b187c62e5a2e58f.png"></p>
+<h2 id="设置分区"><a href="#设置分区" class="headerlink" title="设置分区"></a>设置分区</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">fdisk /dev/sdb</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/640b04601901e4612f494e6f20ce7c4.png"></p>
+<ul>
+<li><p>创建一个大小为500M的分区,并指定分区编号</p>
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/ede2994f332b6b13ce03a536cffe05c.png"></p>
+</li>
+<li><p>保存退出后，此分区便成功创建</p>
+</li>
+</ul>
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/7924f47538000ba974299c485271213.png"></p>
+<ul>
+<li><p>格式化</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">mkfs -t ext4 /dev/sdb1</span><br></pre></td></tr></table></figure>
+
+<h2 id="挂载"><a href="#挂载" class="headerlink" title="挂载"></a>挂载</h2><ul>
+<li><p>创建目录/home/it</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">mkdir /home/it</span><br></pre></td></tr></table></figure></li>
+<li><p>将dev下的sdb1分区挂载到home/it目录下(临时挂载)</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">mount /dev/sdb1 /home/it</span><br></pre></td></tr></table></figure></li>
+<li><p>永久挂载</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">vim /etc/fstab</span><br></pre></td></tr></table></figure></li>
+<li><p>生效命令</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">mount -a</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h1 id="linux系统状态检测命令"><a href="#linux系统状态检测命令" class="headerlink" title="linux系统状态检测命令"></a>linux系统状态检测命令</h1><ul>
+<li><p>ip addr命令(作用同ifconfig)</p>
+<p>用于获取网卡配置与网络状态等信息</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">ip addr</span><br></pre></td></tr></table></figure>
+
+<p><img src="C:\Users\zhangzilong\AppData\Roaming\Typora\typora-user-images\image-20230502202130758.png" alt="image-20230502202130758"></p>
+</li>
+</ul>
+</li>
+<li><p>uname命令</p>
+<p>用于查看系统内核与系统版本信息</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">uname -a</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>查看当前版本的详细信息(输到red后可按tab键自动补齐)</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">cat /etc/redhat-release</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>free命令</p>
+<p>显示当前系统内存的使用量信息</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">free -h</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/2fec65dfe6c571cc4323b086854506b.png"></p>
+</li>
+<li><p>last命令</p>
+<p>用于查看所有系统的登录记录</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">last</span><br></pre></td></tr></table></figure></li>
+<li><p>history命令</p>
+<p>用于显示历史命令</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">history</span><br></pre></td></tr></table></figure></li>
+<li><p>uptime命令</p>
+<p>用于查看系统的负载情况</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">uptime</span><br></pre></td></tr></table></figure></li>
+</ul>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>linux管道符,磁盘管理</title>
+    <url>/2023/05/02/linux%E7%AE%A1%E9%81%93%E7%AC%A6/</url>
+    <content><![CDATA[<h1 id="linux管道符、重定向与环境变量"><a href="#linux管道符、重定向与环境变量" class="headerlink" title="linux管道符、重定向与环境变量"></a>linux管道符、重定向与环境变量</h1><span id="more"></span>
+
+<h2 id="输出重定向"><a href="#输出重定向" class="headerlink" title="输出重定向"></a>输出重定向</h2><p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/1e7fbfa8a5d6de328d906db1b1daa9e.png"></p>
+<ul>
+<li><p>想把a的创建信息写入a.info中</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">ls -l a &gt; a.<span class="property">info</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/455bbd1b187398745e92e2c0eecedd4.png"></p>
+</li>
+<li><p>将错误重定向到一个文件中（覆盖原文件的内容）</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">ls -l xxxx <span class="number">2</span>&gt; error.<span class="property">log</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/4fee04bb0ab2846b7b28a8137daa24b.png"></p>
+</li>
+</ul>
+<h2 id="管道命令符"><a href="#管道命令符" class="headerlink" title="管道命令符"></a>管道命令符</h2><p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/705ed1dace687b85beef36d21cbbd85.png"></p>
+<ul>
+<li><p>找出被限制用户登录的命令</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">grep <span class="string">&quot;/sbin/nologin&quot;</span> /etc/passwd</span><br></pre></td></tr></table></figure></li>
+<li><p>统计文本行数命令是 wc -l</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">grep <span class="string">&quot;/sbin/nologin&quot;</span> /etc/passwd | wc -l</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/fc945763a972a1f5d1697375397e0b7.png"></p>
+</li>
+<li><p>翻页查看etc目录下的文件</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">ls -l /etc/ | more</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/f1d61fb09962865ce8c622949a5a94f.png"></p>
+</li>
+<li><p>通配符</p>
+<p>通配符就是通用的匹配信息的符号，比如星号（*）代 表匹配零个或多个字符，问号（?）代表匹配单个字符，中括号内加上数字[0-9]代表匹配 0～9 之间的单个数字的字符，而中括号内加上字母[abc]则是代表匹配 a、b、c 三个字符中的任意 一个字符。</p>
+</li>
+<li><p>查看opt目录下sda开头的文件</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">ls -l /dev/sda*</span><br></pre></td></tr></table></figure></li>
+<li><p>查看opt目录下以sda开头,文件名为四个字符的文件</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">ls -l /dev/sda?</span><br></pre></td></tr></table></figure></li>
+<li><p>查看opt目录下sda+[0-9]的文件</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">ls -l /dev/sda[<span class="number">0</span>-<span class="number">9</span>]</span><br></pre></td></tr></table></figure></li>
+<li><p>查看opt目录下sda+[7-9]的文件(不存在此文件)</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">ls -l /dev/sda[<span class="number">7</span>-<span class="number">9</span>]</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/fc407b76ca6f43b10f320b377bf09ac.png"></p>
+</li>
+</ul>
+<h2 id="环境变量"><a href="#环境变量" class="headerlink" title="环境变量"></a>环境变量</h2><ul>
+<li><p>在Linux系统中，环境变量按照其作用范围不同大致可以分为系统级环境变量和用户级环境变量。</p>
+<ul>
+<li><p>系统级环境变量：每一个登录到系统的用户都能够读取到系统级的环境变量</p>
+</li>
+<li><p>用户级环境变量：每一个登录到系统的用户只能够读取属于自己的用户级的环境变量</p>
+<p>查看系统级别的环境变量</p>
+</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">vim /etc/profile</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>在最底下编辑相应的环境变量</p>
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/265ba7780767c46cbacabaff7e59361.png"></p>
+</li>
+</ul>
+</li>
+<li><p>让环境变量生效</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">source /etc/profile</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h1 id="磁盘管理"><a href="#磁盘管理" class="headerlink" title="磁盘管理"></a>磁盘管理</h1><h2 id="linux分区原理"><a href="#linux分区原理" class="headerlink" title="linux分区原理"></a>linux分区原理</h2><p>Linux的文件系统是树形的，安装的系统必须是在 / 目录下，因为/目录下挂载了一个主分区。/目录是树形的根，其他所有目录都是他的子节点。</p>
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/9476a82f5da48053e1b8eecd79648e9.png"></p>
+<ul>
+<li><p>df命令</p>
+<ul>
+<li><p>用于显示 Linux 系统中各文件系统的硬盘使用情况，包括文件系统</p>
+<p>所在硬盘分区的总容量、已使用的容量、剩余容量等。</p>
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/c8dbe837391586ca7c4e4e199ba03d5.png"></p>
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/65526417eb53ce5c1cd72a7f97194d8.png"></p>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/2a5d673222bd7653952a0508f9cf5a9.png"></p>
+<ul>
+<li><p>lsblk命令</p>
+<ul>
+<li><p>lsblk命令来自英文词组“list block”的缩写，其功能是用于查看系统的使用情况</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">lsblk -f</span><br></pre></td></tr></table></figure></li>
+</ul>
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/597d2e400d7adc82612b8833353d3e8.png"></p>
+</li>
+<li><p>fdisk命令</p>
+<ul>
+<li><p>Linux fdisk是一个创建和维护分区表的程序，它兼容DOS类型的分</p>
+<p>区表、BSD或者SUN类型的磁盘列表。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">fdisk -l</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/01f25e7d9f4ba02932ed12865d3f852.png"></p>
+</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>vim工具及linux文件查看命令、打包压缩与搜索命令</title>
+    <url>/2023/05/01/vim%E5%B7%A5%E5%85%B7/</url>
+    <content><![CDATA[<h1 id="vim的三种模式及文件查看命令"><a href="#vim的三种模式及文件查看命令" class="headerlink" title="vim的三种模式及文件查看命令"></a>vim的三种模式及文件查看命令</h1><span id="more"></span>
+
+<h2 id="命令模式-Command-mode"><a href="#命令模式-Command-mode" class="headerlink" title="命令模式(Command mode)"></a>命令模式(Command mode)</h2><h3 id="命令模式下的命令及作用"><a href="#命令模式下的命令及作用" class="headerlink" title="命令模式下的命令及作用"></a>命令模式下的命令及作用</h3><ul>
+<li>按esc即可进入命令模式</li>
+</ul>
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/a2f9d9ed41a29f096b04d32e4fa9e84.png"></p>
+<h2 id="输入模式-Insert-mode"><a href="#输入模式-Insert-mode" class="headerlink" title="输入模式(Insert mode)"></a>输入模式(Insert mode)</h2><p>一般在命令模式下按a进入输入模式</p>
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/23b65774343da9149b8744026374fae.png"></p>
+<h2 id="底线命令模式-Last-line-mode"><a href="#底线命令模式-Last-line-mode" class="headerlink" title="底线命令模式(Last line mode)"></a>底线命令模式(Last line mode)</h2><ul>
+<li>主要保存或者退出文件，以及设置Vim编辑器的工作环境，还可以让用户执行外部的Linux命令或跳转所编写文档的特定行数。</li>
+</ul>
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/dd6de819e3390382916493451370ac9.png"></p>
+<h1 id="linux文件查看命令"><a href="#linux文件查看命令" class="headerlink" title="linux文件查看命令"></a>linux文件查看命令</h1><h2 id="cat命令"><a href="#cat命令" class="headerlink" title="cat命令"></a>cat命令</h2><p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/b59902cb4235d9928ce8534bad0d644.png"></p>
+<ul>
+<li><p>查看根目录下的a.info文件</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">cat a.<span class="property">info</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/df051ded641817fd634a410df349526.png"></p>
+<h3 id="nl查看内容，显示行号"><a href="#nl查看内容，显示行号" class="headerlink" title="nl查看内容，显示行号"></a>nl查看内容，显示行号</h3><p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/f9dc2b1493d9e9e37b7f5192500bac0.png"></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">nl a.<span class="property">info</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/aad57aebdf56d907cb924e42a7ef2d5.png"></p>
+</li>
+</ul>
+<h3 id="head-只看头几行"><a href="#head-只看头几行" class="headerlink" title="head(只看头几行)"></a>head(只看头几行)</h3><p>只看头3行</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">head -n <span class="number">3</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/4453bd898fe1edd2ff1fa08b2770b78.png"></p>
+<h3 id="tail（只看尾几行）"><a href="#tail（只看尾几行）" class="headerlink" title="tail（只看尾几行）"></a>tail（只看尾几行）</h3><p>只看尾3行</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">tail -n <span class="number">3</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/3de6828a7acd3edafc3d9c13ffef3cd.png"></p>
+<h1 id="linux-打包压缩与搜索命令"><a href="#linux-打包压缩与搜索命令" class="headerlink" title="linux 打包压缩与搜索命令"></a>linux 打包压缩与搜索命令</h1><p>创建普通的info或txt文件</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">touch a.txt</span><br></pre></td></tr></table></figure>
+
+<h2 id="tar命令"><a href="#tar命令" class="headerlink" title="tar命令"></a>tar命令</h2><p>选项：</p>
+<ul>
+<li><p>-c 产生.tar打包文件</p>
+<p>-v 显示详细信息</p>
+<p>-f 指定压缩后的文件名</p>
+<p>-z 打包同时压缩 Gzip</p>
+<p>-x 解包.tar文件</p>
+</li>
+<li><p>压缩test目录下的a.info、a.txt、b.info，并给安装包取名叫test.tar.gz</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">tar -zcvf test.tar.gz a.info a.txt b.info</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/60c33f177f199bd73f9a064c261a19c.png"></p>
+</li>
+<li><p>解压命令</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">tar -zxvf test.<span class="property">tar</span>.<span class="property">gz</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/223113fa3dde2b1cb274b037de55e47.png"></p>
+</li>
+</ul>
+<p>将test.tar.gz解压到指定的位置，需要-C指定位置</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">tar -zxvf test.<span class="property">tar</span>.<span class="property">gz</span> -C /usr/local/</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/cc73c94c035799ef2a764eb85949a15.png"></p>
+<h2 id="gzip-gunzip压缩"><a href="#gzip-gunzip压缩" class="headerlink" title="gzip/gunzip压缩"></a>gzip/gunzip压缩</h2><ul>
+<li><p>gzip是压缩</p>
+<p>如压缩test下的a.info文件</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">gzip a.<span class="property">info</span></span><br></pre></td></tr></table></figure></li>
+<li><p>gunzip是解压</p>
+<p>如解压a.info.zip</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">gunzip a.<span class="property">info</span>.<span class="property">gz</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/15945b2cb15b08d9d34c7ca5416dc87.png"></p>
+</li>
+</ul>
+<h2 id="搜索命令"><a href="#搜索命令" class="headerlink" title="搜索命令"></a>搜索命令</h2><ul>
+<li><p>grep</p>
+<p>如在a.info文件里搜索a字符</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">grep <span class="string">&quot;a&quot;</span> a.<span class="property">info</span></span><br></pre></td></tr></table></figure>
+
+<p>如果想显示行号，加上-n</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">grep -n <span class="string">&quot;a&quot;</span> a.<span class="property">info</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/468aa9acd42b2d24677a1c55538b2b7.png"></p>
+</li>
+<li><p>find命令</p>
+<p>用于按照指定条件来查找文件</p>
+<p>如搜索当前目录下后缀名为info的文件,*为通配符</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">find ./ -name *.<span class="property">info</span></span><br></pre></td></tr></table></figure>
+
+<p>寻找用户创建出来的文件</p>
+<p>如root创建出来的文件</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">find / -user root</span><br></pre></td></tr></table></figure></li>
+</ul>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
       </tags>
   </entry>
 </search>

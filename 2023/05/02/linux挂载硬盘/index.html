@@ -20,15 +20,27 @@
     var CONFIG = {"hostname":"zzlsuper.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="听风与他-博客">
-<meta property="og:url" content="http://zzlsuper.github.io/archives/2023/04/index.html">
+  <meta name="description" content="linux挂载硬盘">
+<meta property="og:type" content="article">
+<meta property="og:title" content="linux挂载硬盘及系统状态检测">
+<meta property="og:url" content="http://zzlsuper.github.io/2023/05/02/linux%E6%8C%82%E8%BD%BD%E7%A1%AC%E7%9B%98/index.html">
 <meta property="og:site_name" content="听风与他-博客">
+<meta property="og:description" content="linux挂载硬盘">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/6523106d3012f165b187c62e5a2e58f.png">
+<meta property="og:image" content="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/640b04601901e4612f494e6f20ce7c4.png">
+<meta property="og:image" content="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/ede2994f332b6b13ce03a536cffe05c.png">
+<meta property="og:image" content="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/7924f47538000ba974299c485271213.png">
+<meta property="og:image" content="c:/Users/zhangzilong/AppData/Roaming/Typora/typora-user-images/image-20230502202130758.png">
+<meta property="og:image" content="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/2fec65dfe6c571cc4323b086854506b.png">
+<meta property="article:published_time" content="2023-05-02T11:34:37.000Z">
+<meta property="article:modified_time" content="2023-05-02T12:30:41.649Z">
 <meta property="article:author" content="听风与他">
+<meta property="article:tag" content="linux">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/6523106d3012f165b187c62e5a2e58f.png">
 
-<link rel="canonical" href="http://zzlsuper.github.io/archives/2023/04/">
+<link rel="canonical" href="http://zzlsuper.github.io/2023/05/02/linux%E6%8C%82%E8%BD%BD%E7%A1%AC%E7%9B%98/">
 
 
 <script id="page-configurations">
@@ -36,12 +48,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>归档 | 听风与他-博客</title>
+  <title>linux挂载硬盘及系统状态检测 | 听风与他-博客</title>
   
 
 
@@ -155,130 +167,153 @@
         <div class="content-wrap">
           
 
-          <div class="content archive">
+          <div class="content post posts-expand">
             
 
+    
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <span class="collection-header">嗯..! 目前共计 13 篇日志。 继续努力。</span>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zzlsuper.github.io/2023/05/02/linux%E6%8C%82%E8%BD%BD%E7%A1%AC%E7%9B%98/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/%E6%88%91%E7%9A%84%E5%A4%B4%E5%83%8F.jpg">
+      <meta itemprop="name" content="听风与他">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="听风与他-博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          linux挂载硬盘及系统状态检测
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2023-05-02 19:34:37 / 修改时间：20:30:41" itemprop="dateCreated datePublished" datetime="2023-05-02T19:34:37+08:00">2023-05-02</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/linux/" itemprop="url" rel="index"><span itemprop="name">linux</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2023</span>
-    </div>
+        <h1 id="linux挂载硬盘"><a href="#linux挂载硬盘" class="headerlink" title="linux挂载硬盘"></a>linux挂载硬盘</h1><span id="more"></span>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+<h2 id="虚拟机添加硬盘"><a href="#虚拟机添加硬盘" class="headerlink" title="虚拟机添加硬盘"></a>虚拟机添加硬盘</h2><p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/6523106d3012f165b187c62e5a2e58f.png"></p>
+<h2 id="设置分区"><a href="#设置分区" class="headerlink" title="设置分区"></a>设置分区</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fdisk /dev/sdb</span><br></pre></td></tr></table></figure>
 
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2023-04-30T16:52:04+08:00"
-              content="2023-04-30">
-          04-30
-        </time>
-      </div>
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/640b04601901e4612f494e6f20ce7c4.png"></p>
+<ul>
+<li><p>创建一个大小为500M的分区,并指定分区编号</p>
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/ede2994f332b6b13ce03a536cffe05c.png"></p>
+</li>
+<li><p>保存退出后，此分区便成功创建</p>
+</li>
+</ul>
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/7924f47538000ba974299c485271213.png"></p>
+<ul>
+<li><p>格式化</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkfs -t ext4 /dev/sdb1</span><br></pre></td></tr></table></figure>
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2023/04/30/linux%E7%94%A8%E6%88%B7%E5%8F%8A%E5%88%87%E6%8D%A2/" itemprop="url">
-            <span itemprop="name">linux用户及切换</span>
-          </a>
-      </div>
+<h2 id="挂载"><a href="#挂载" class="headerlink" title="挂载"></a>挂载</h2><ul>
+<li><p>创建目录/home/it</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir /home/it</span><br></pre></td></tr></table></figure></li>
+<li><p>将dev下的sdb1分区挂载到home/it目录下(临时挂载)</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mount /dev/sdb1 /home/it</span><br></pre></td></tr></table></figure></li>
+<li><p>永久挂载</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/fstab</span><br></pre></td></tr></table></figure></li>
+<li><p>生效命令</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mount -a</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h1 id="linux系统状态检测命令"><a href="#linux系统状态检测命令" class="headerlink" title="linux系统状态检测命令"></a>linux系统状态检测命令</h1><ul>
+<li><p>ip addr命令(作用同ifconfig)</p>
+<p>用于获取网卡配置与网络状态等信息</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ip addr</span><br></pre></td></tr></table></figure>
 
-    </header>
-  </article>
+<p><img src="C:\Users\zhangzilong\AppData\Roaming\Typora\typora-user-images\image-20230502202130758.png" alt="image-20230502202130758"></p>
+</li>
+</ul>
+</li>
+<li><p>uname命令</p>
+<p>用于查看系统内核与系统版本信息</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">uname -a</span><br></pre></td></tr></table></figure>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+<ul>
+<li><p>查看当前版本的详细信息(输到red后可按tab键自动补齐)</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat /etc/redhat-release</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>free命令</p>
+<p>显示当前系统内存的使用量信息</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">free -h</span><br></pre></td></tr></table></figure>
 
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2023-04-30T15:58:45+08:00"
-              content="2023-04-30">
-          04-30
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2023/04/30/Linux%E7%94%A8%E6%88%B7%E5%8F%8A%E7%94%A8%E6%88%B7%E7%BB%84%E7%AE%A1%E7%90%86/" itemprop="url">
-            <span itemprop="name">Linux用户及用户组管理</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2023-04-29T23:37:13+08:00"
-              content="2023-04-29">
-          04-29
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2023/04/29/my-English/" itemprop="url">
-            <span itemprop="name">my_English</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2023-04-29T23:31:51+08:00"
-              content="2023-04-29">
-          04-29
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2023/04/29/my-sports/" itemprop="url">
-            <span itemprop="name">my_sports</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2023-04-29T16:57:10+08:00"
-              content="2023-04-29">
-          04-29
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2023/04/29/hexo%E7%9A%84%E4%BD%BF%E7%94%A8/" itemprop="url">
-            <span itemprop="name">hexo的使用</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
+<p><img src="https://cdn.staticaly.com/gh/zzlSuper/blog-imgs@master/img/2fec65dfe6c571cc4323b086854506b.png"></p>
+</li>
+<li><p>last命令</p>
+<p>用于查看所有系统的登录记录</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">last</span><br></pre></td></tr></table></figure></li>
+<li><p>history命令</p>
+<p>用于显示历史命令</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">history</span><br></pre></td></tr></table></figure></li>
+<li><p>uptime命令</p>
+<p>用于查看系统的负载情况</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">uptime</span><br></pre></td></tr></table></figure></li>
+</ul>
 
     </div>
-  </div>
-  
-  
-  
 
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/linux/" rel="tag"># linux</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2023/05/02/linux%E7%AE%A1%E9%81%93%E7%AC%A6/" rel="prev" title="linux管道符,磁盘管理">
+      <i class="fa fa-chevron-left"></i> linux管道符,磁盘管理
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2023/05/02/linux%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6/" rel="next" title="linux安装软件">
+      linux安装软件 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
   
 
 
@@ -331,6 +366,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#linux%E6%8C%82%E8%BD%BD%E7%A1%AC%E7%9B%98"><span class="nav-number">1.</span> <span class="nav-text">linux挂载硬盘</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%99%9A%E6%8B%9F%E6%9C%BA%E6%B7%BB%E5%8A%A0%E7%A1%AC%E7%9B%98"><span class="nav-number">1.1.</span> <span class="nav-text">虚拟机添加硬盘</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E5%88%86%E5%8C%BA"><span class="nav-number">1.2.</span> <span class="nav-text">设置分区</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8C%82%E8%BD%BD"><span class="nav-number">1.3.</span> <span class="nav-text">挂载</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#linux%E7%B3%BB%E7%BB%9F%E7%8A%B6%E6%80%81%E6%A3%80%E6%B5%8B%E5%91%BD%E4%BB%A4"><span class="nav-number">2.</span> <span class="nav-text">linux系统状态检测命令</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
